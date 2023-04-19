@@ -298,7 +298,7 @@ footer{
     .recent-posts{
         display:grid;
         grid-template: repeat(auto-fit, minmax(0, 1fr)) / repeat(3, minmax(0, 1fr));
-        gap: 0 26px;
+        gap: 10px 26px;
         margin: 3.3125em;
     }
 
