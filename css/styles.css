@@ -1,0 +1,352 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+}
+
+/* TYPOGRAPHY */
+
+header{
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+    color: #090909;
+}
+
+footer{
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+.footer-text{
+    font-weight: 700;
+    color: #ECECEC;
+    letter-spacing: -0.03em;
+}
+
+.copyright-text{
+    color: #D7D7D7;
+}
+
+.hero{
+    color: #FFFFFF;
+}
+
+.hero-date{
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+.hero-title{
+    font-size: 2rem;
+    line-height: 1.25;
+    letter-spacing: -0.03em; 
+}
+
+.hero-preview{
+    font-size: 1rem;
+    line-height: 1.45;
+}
+
+.entry-date{
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.entry-title{
+    font-size: 1.5rem;
+    color: #141414;
+}
+
+.entry-preview{
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #505050;
+}
+
+.view-more-btn{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000000;
+    line-height: 1.5;
+    text-decoration: underline;
+    margin-bottom: 2.6875em;
+}
+
+.article{
+    color: #151515;
+}
+
+.article-date{
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+.article-title{
+    font-size: 2rem;
+    letter-spacing: -0.03em;
+}
+
+.article-preview,
+.article-header,
+.article-text,
+.about-preview{
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.recent-posts-text{
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.about-title{
+    font-size: 2.1875rem;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+}
+
+.about-header,
+.about-text{
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+@media (min-width:768px){
+    header,
+    .hero-date,
+    .article-date{
+        font-size: 1rem;
+    }
+
+    .hero-title{
+        font-size: 2.5rem;
+    }
+    
+    .view-more-btn{
+        font-size: 0.875rem;
+        margin-bottom: 3.3125em;
+    }
+
+    .article-title{
+        font-size: 2.25rem;
+    }
+    
+    .article-header,
+    .recent-posts-text{
+        font-size: 1.5rem;
+    }
+
+    .article-text{
+        font-size: 1.125rem;
+    }
+
+    .about-title{
+        font-size: 2.25rem;
+    }
+
+    .about-header{
+        font-size: 1.25rem;
+    }
+}
+
+
+/* HEADER & NAV BAR */
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.667em;
+}
+
+#logo{
+    object-fit: contain;
+}
+
+ul{
+    list-style: none;
+    display:flex;
+    gap: 2.5em;
+}
+
+
+/* FOOTER */
+footer{
+    height: 100px;
+    background: #202020;
+    padding-top: 2.5em
+}
+
+
+/* HERO */
+.hero{
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+    background-image: url(/images/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    padding: 5.4375em 1.25em 0em 1.25em;
+}
+
+.hero-date{
+    margin-bottom: 0;
+}
+
+.hero-title{
+    margin: 0.3125em 0;
+}
+
+.hero-preview{
+    margin-top: 0;
+    margin-bottom: 1.5625rem;
+}
+
+.article-link{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* RECENT POSTS  */
+.recent-posts{
+    margin: 2.1875em 1.25em;
+}
+
+.journal-entry{
+    display: flex;
+    flex-direction: column;
+}
+
+.entry-img{
+    border-radius: 3px;
+}
+
+.entry-date{
+    margin-top: 14px;
+    margin-bottom: 9px;
+}
+
+.entry-preview{
+    margin-top: 9px;
+    margin-bottom: 41px;
+}
+
+.entry-title{
+    margin: 0;
+}
+
+
+/* ARTICLE PAGE */
+.article{
+    margin: 2.1875em 1.25em;
+}
+
+.article-img{
+    border-radius: 3px;
+    display:block;
+    margin: 35px auto;
+    width:100%;
+    height: 191px;
+    object-fit: cover;
+}
+
+
+
+
+/* ABOUT ME PAGE */
+.roku-img{
+    margin-left: 1.25em;
+    margin-top: 1.625em;
+}
+
+.about-me{
+    margin: auto 1.25em;
+}
+
+.about-title{
+    margin-right: 1.2em;
+    margin-bottom: 0.458em;
+}
+
+.about-main{
+    margin-top: 3.125em;
+}
+
+.about-header,
+.about-text{
+    margin: auto 1.25em;
+}
+
+@media (min-width:768px){
+    .hero{
+        height: 488px;
+        background-position: top;
+        padding: 6em 375px 3.75em 3.3125em;
+    }
+
+    .recent-posts{
+        display:grid;
+        grid-template: repeat(auto-fit, minmax(0, 1fr)) / repeat(3, minmax(0, 1fr));
+        gap: 0 26px;
+        margin: 3.3125em;
+    }
+
+    .entry-preview{
+        margin-bottom: 0;
+    }
+    
+    .article{
+        margin: auto 3.3125em;
+    }
+
+    .article-img{
+        height: 488px;
+    }
+
+    .article-date,
+    .article-title{
+        margin-left: 70px;
+    }
+
+    .article-header,
+    .article-text,
+    .article-preview{
+        margin: 0 70px;
+    }
+
+    .recent-posts-text{
+        margin-bottom: 0;
+        margin-top: 75px;
+    }
+
+    .about-me{
+        display:flex;
+        align-items: center;
+        margin: 0 50px;
+    }
+
+    .about-title{
+        margin-bottom: 10px;
+    }
+
+    .about-preview,
+    .about-title{
+        margin-left: 30px;
+    }
+
+    .about-main{
+        margin: 65px 120px;
+    }
+
+}
